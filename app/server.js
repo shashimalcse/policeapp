@@ -5,6 +5,8 @@ var express=require('express'),
     passport=require('passport'),
     jwt=require('jsonwebtoken');
 
+var hookJWTStrategy = require('./services/passportStrategy');
+
 var app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -15,7 +17,11 @@ app.use(morgan('dev'));
 
 app.use(passport.initialize());
 
+hookJWTStrategy(passport);
+
 app.use(express.static(__dirname + '../../public'));
+
+app.use('/api', require('./routes/api')(passport));
 
 app.get('/', function(req, res) {
     res.send('Nice meeting you wizard, I\'m Gandalf!');
