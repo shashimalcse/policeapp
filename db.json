@@ -1,0 +1,6 @@
+{
+    "status": 200,
+    "message": "authentication successful!",
+    "token": "Tz2DBovYmUJ6GYXi176yWOQzFIhbyfFDT7bxA1M8DoJlWwOpGbXNoMIRauH6SqNmbhQF4zijiJAX0j6y8c1VDHIfxLbnO6WvyuwcFI9XoITx9axQF72wHDaiFri2NBssdsM9NEj8hhfrOSwWEDjBezMwsxCnnrnqOzO0CuglQChTYl0YjMVD5NIRTBqu1dNOIfOaHMmITnGcx6KPub8irvRIXj466hKRasXez6DMzWETz5d7zAFwu7pAPPp9EZb",
+    "role": "ROLE_REPRESENTATIVE"
+}
